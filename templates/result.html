@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content">
+        <div class="header">
+            <a href="/home" class="logo"><h1>IELTS Reviewer</h1></a>
+            <div class="header-right">
+            <a class="active" href="/home">Corrector</a>
+            <a href="/rules">Rules</a>
+            <a class="" href="/register">Log Out</a>
+
+            </div>
+        </div>
+        <div class="container">
+        <p><b>Reviewer's suggestions for your text:</b></p>
+        {% for line in results %}
+            <p>{{ line }}</p>
+        {% endfor %}
+        <br>
+        <div class="buttons">
+            <a href="/home" class="buttons">Back</a>
+        </div>
+        <br>
+        <br>
+        </div>
+    </div>
+{% endblock content %}

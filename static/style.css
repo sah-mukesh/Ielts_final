@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+* {box-sizing: border-box;}
+
+h1 {
+  color: #006AE5;
+  margin: auto;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: 'Jost', sans-serif;
+}
+
+h2 {
+  color: #1a1e2a;
+  margin: auto;
+  font-size: 140%;
+  font-weight: normal;
+  padding-top: 15px;
+}
+
+h3 {
+  font-size: 120%;
+  font-weight: normal;
+}
+
+p {
+  font-size: 100%;
+}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+.nicetext a:link{color: #006AE5;}
+.nicetext a:visited{color: #006AE5;}
+.nicetext a:hover{color: #006AE5;}
+.nicetext a:active{color: #006AE5;}
+
+.pluginstext a:link{color: #006AE5;}
+.pluginstext a:visited{color: #006AE5;}
+.pluginstext a:hover{color: #006AE5;}
+.pluginstext {
+  font-size: 80%;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.content {
+  max-width: 920px;
+  margin: auto;
+}
+
+ul {
+  margin-left: -15px;
+}
+
+input[type=text], select, textarea {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #006AE5;
+  color: white;
+  font-size: 120%;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: #5294e2;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #EFF5FC;
+  padding: 7px 20px;
+  padding-bottom: 20px;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #006AE5;
+  text-align: center;
+  padding: 12px 18px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 120%;
+  line-height: 14px;
+  border-radius: 5px;
+  font-family: 'Jost', sans-serif;
+}
+
+.header img {
+  float: left;
+  padding-bottom: 13px;
+  width: 75px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-weight: normal;
+  color: #006AE5;
+  padding: 12px 12px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  color: #006AE5;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #006AE5;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  padding: 0px 18px;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 700px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+    padding-top: 15px;
+  }
+  .logo {
+    margin: 12px 17px;
+  }
+}
+
+.language_selection {
+  float: right;
+  width: 193px;
+  height: 43px;
+  padding: 3px 17px;
+  margin-top: 0px;
+}
+
+select {
+  border: 1px solid #CCC;
+  width: 193px;
+  height: 43px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(/static/arrow.png) 98% / 10% no-repeat #ddd;
+  background-color: white;
+}
+
+
+.buttons a {
+  float: left;
+  border: none;
+  background-color: #006AE5;
+  color: #ffffff;
+  padding: 6px 18px;
+  margin-right: 10px;
+  font-size: 120%;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Jost', sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .buttons a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-top: 7px;
+  }
+}
